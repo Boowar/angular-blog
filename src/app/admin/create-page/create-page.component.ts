@@ -1,6 +1,7 @@
-import { AlertService } from "./../shared/services/alert.service"
-import { FormGroup, FormControl, Validators } from "@angular/forms"
 import { Component, OnInit } from "@angular/core"
+import { FormGroup, FormControl, Validators } from "@angular/forms"
+
+import { AlertService } from "./../shared/services/alert.service"
 import { PostsService } from "./../../shared/posts.service"
 import { Post } from "../../shared/interfaces"
 

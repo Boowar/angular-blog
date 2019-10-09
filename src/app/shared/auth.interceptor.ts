@@ -1,7 +1,5 @@
-import { catchError } from "rxjs/operators"
-import { Router } from "@angular/router"
-import { AuthService } from "./../admin/shared/services/auth.service"
 import { Injectable } from "@angular/core"
+import { Router } from "@angular/router"
 import {
   HttpInterceptor,
   HttpRequest,
@@ -9,6 +7,9 @@ import {
   HttpEvent,
   HttpErrorResponse,
 } from "@angular/common/http"
+
+import { catchError } from "rxjs/operators"
+import { AuthService } from "./../admin/shared/services/auth.service"
 import { Observable, throwError } from "rxjs"
 
 @Injectable()

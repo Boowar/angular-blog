@@ -1,9 +1,10 @@
+import { ActivatedRoute } from "@angular/router"
 import { Params } from "@angular/router"
-import { switchMap } from "rxjs/operators"
+import { Component, OnInit } from "@angular/core"
+
 import { Post } from "./../shared/interfaces"
 import { PostsService } from "./../shared/posts.service"
-import { ActivatedRoute } from "@angular/router"
-import { Component, OnInit } from "@angular/core"
+import { switchMap } from "rxjs/operators"
 import { Observable } from "rxjs"
 
 @Component({
