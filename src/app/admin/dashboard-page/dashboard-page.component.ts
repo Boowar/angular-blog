@@ -11,6 +11,7 @@ import { Subscription } from "rxjs"
 export class DashboardPageComponent implements OnInit, OnDestroy {
   posts: Post[] = []
   pSub: Subscription
+  searchStr: string = ""
 
   constructor(private postsService: PostsService) {}
 
